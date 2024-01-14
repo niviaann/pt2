@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("bgcourt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: green;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', 'sans-serif,';
+    text-align: center;
+    
+} 
+
+h1 {
+    font-size: 45px;
+    margin-top: 1px;
+}
+
+span {
+  color: darkgreen;
+}
+
+/* all about hover */
+
+nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: darkgreen;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0px;
+    position: relative;
+} 
+
+nav a:hover {
+    color: white;
+}  
+
+nav a::before {
+    content:'';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: all .7s;
+}  
+
+nav a:hover::before {
+    width: 100%;
+} 
+
+/* border sa paragraph */ 
+
+p.one {
+  border-style: solid;
+  border-color: darkgreen;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+p.two{
+  border-style: solid;
+  border-color: darkgreen;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+  text-align: justify;
+}
